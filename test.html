@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mathieu Rocher</title>
+    <link rel="shortcut icon" href="Image/LogoTestColor.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+
+</head>
+
+<body>
+    <script>
+        function myFunction() {
+            // Get the checkbox
+            var checkBox = document.getElementById("box");
+            // Get the output text
+            var text = document.getElementById("text");
+
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+    </script>
+    
+    <article>
+
+        <form action="/form/submit" method="post">
+            <label class="col-12" for="box">Click here</label>
+            <input type="checkbox" id="box" class="hidden" onclick="myFunction()"/>
+
+        </form>
+        <div class="col-12"id="text"> ouiii</div>
+    </article>
+</body></html>
+
+
+   
+  
